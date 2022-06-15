@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* PRODUCT */
+
+.product {
+  width: 825px;
+  border: 4px solid black;
+  margin: 50px auto;
+  position: relative;
+}
+
+.product-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 15px;
+}
+
+body {
+  color: #444;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.4;
+  /* border: 5px solid black; */
+}
+
+/* PRODUCT  */
+
+.price {
+  font-size: 24px;
+}
+
+.shipping {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: #000;
+  margin-bottom: 30px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/*PRODUCT DETAILS */
+
+.details-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+/*BUTTON*/
+
+.add-cart {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border-top: 4px solid black;
+}
+.add-cart:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* CHALLANGE #3 */
+/* My way of creating the "SALE" part */
+
+/* h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "SALE";
+  color: #fff;
+  background-color: orangered;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+} */
+
+/* The Course way of crating the "SALE" part */
+/* Adds a <p class="sale">Sale</p>
+It selects the parent element of h2 to position it to relative, using the class .product, which contains the h2. */
+
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+
+/* To create the "colors" part of the challenge, we create a container, using the <div></div>-element. We add child elements, and give each child element classes. */
+
+/* We give the <div> element multiple classes
+<div class="color color-blue"></div> */
+
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* I added the color-black class to, so that I can add some space to the right, from the border. */
+
+.color-black {
+  margin-left: 10px;
+}
+
+.color-blue {
+  background-color: #1111e6;
+}
+
+.color-red {
+  background-color: #d31010;
+}
+
+.color-yellow {
+  background-color: #ffff00;
+}
+
+.color-green {
+  background-color: #43e843;
+}
+
+.color-brown {
+  background-color: #a13838;
+}
+
+/* To add space to the top, we need to first transform the anchor element to inline-block, so that we can add top and bottom margins. */
